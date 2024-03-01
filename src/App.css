@@ -14,7 +14,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-image: url('./assets/landingPage.png');
+  background-size:cover;
+  background-color:#1E1E1E;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
