@@ -3,7 +3,7 @@ import homeLogo from '../assets/homeLogo.png'
 function Navbar() {
     return (
         <nav class="justify-normal">
-            <ul class="flex space-x-28 items-center">
+            <ul class="flex space-x-28 items-center font-Poppins font-light">
                 <li>
                     <a href="">home</a>
                 </li>
