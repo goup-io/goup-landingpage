@@ -1,4 +1,3 @@
-import './Animations.css'
 
 function Hover(props){
     return (

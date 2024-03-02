@@ -9,8 +9,8 @@ module.exports = {
     },
     extend: {
       animation: {
-        'foguete': 'tremer 0.6s linear infinite',
-        'fogo': 'tremer 0.3s linear infinite',
+        'foguete': 'tremer 1.4s linear infinite',
+        'fogo': 'tremer 0.7s linear infinite',
       },
       keyframes : {
         tremer : {
@@ -24,7 +24,7 @@ module.exports = {
           '70%' : { transform: 'translate(1px, 1px) rotate(1deg)'},
           '80%' : { transform: 'translate(-1px, -1px) rotate(0deg)'},
           '90%' : { transform: 'translate(1px, 1px) rotate(1deg)'},
-          '100%' : { transform: 'translate(1px, -1px) rotate(0deg)'},
+          '100%' : { transform: 'translate(1px, 1px) rotate(0deg)'},
         },
         pulsar : {
           '0%': { transform : ''},
