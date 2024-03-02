@@ -2,9 +2,9 @@ import "../index.css";
 
 function Section04() {
     return (
-        <section class=" items-center justify-center  mt-80 content-center">
+        <section class=" items-center content-center">
             <div class="w-full">
-                <p class=" text-6xl font-Poppins m-auto block w-3/12"> Por que nos escolher ? </p>
+                <p class=" text-7xl font-Poppins m-auto block w-3/12 text-center"> Por que nos escolher ? </p>
             </div>
             <div class="w-full items-center mt-[8.5%] flex flex-row">
                 <div class="w-8/12 background-image: bg-gradient-to-t from-purple-500/45  to-green-400/45  rounded-tr-3xl rounded-br-3xl ">

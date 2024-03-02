@@ -1,7 +1,7 @@
 
 function Section01(){
     return(
-        <section class="font-Poppins text-center mt-60">
+        <section id="sobre" class="font-Poppins text-center">
             <p class="text-7xl">
                 Em direção ao <span className="letraDestaqueVerde">Futuro</span>
             </p>

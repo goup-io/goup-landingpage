@@ -1,14 +1,15 @@
 import homeLogo from '../assets/homeLogo.png'
+import Hover from '../components/functions/Hover';
 
 function Navbar() {
     return (
-        <nav class="mt-10">
+        <nav class="mt-10" id="navbar">
             <ul class="flex justify-center space-x-28 items-center font-Poppins font-light text-3xl">
                 <li>
-                    <a href="">home</a>
+                    <Hover content="home" url="#navbar"/>
                 </li>
                 <li>
-                    <a href="">sobre</a>
+                    <Hover content="sobre" url="#sobre"/>
                 </li>
                 <li>
                     <a href="">
@@ -16,10 +17,10 @@ function Navbar() {
                     </a>
                 </li>
                 <li>
-                    <a href="">cases</a>
+                    <Hover content="cases" url="#cases"/>
                 </li>
                 <li>
-                    <a href="">contato</a>
+                     <Hover content="contato" url="#footer"/>
                 </li>
             </ul>
         </nav>
