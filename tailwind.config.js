@@ -29,7 +29,7 @@ module.exports = {
         pulsar : {
           '0%': { transform : ''},
           '50%': { transform : 'scale(1.1)'},
-        }
+        },
       },
       colors: {
         'verdeGoUp' : '#48CFAE',
