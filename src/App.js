@@ -3,6 +3,7 @@ import Navbar from './components/Navbar.js'
 import Section01 from './components/Section01.js'
 import Section02 from './components/Section02.js'
 import Section03 from './components/Section03.js'
+import Section04 from './components/Section04.js';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Section01/>
       <Section02/>
       <Section03/>
+      <Section04/>
     </div>
   );
 }
