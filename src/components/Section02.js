@@ -3,7 +3,7 @@ import '../index.css';
 
 function Section02(){
     return (
-        <section class="flex items-center justify-center mt-64">
+        <section class="flex items-center justify-center mt-80">
             <img src={`${Foguete}`}></img>
             <div class="w-2/6">
                 <p class="text-7xl">Com a gente seu negócio <span className="letraDestaqueVerde">decola</span></p>

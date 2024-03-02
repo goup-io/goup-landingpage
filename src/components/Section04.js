@@ -2,7 +2,7 @@ import "../index.css";
 
 function Section04() {
     return (
-        <section class=" items-center justify-center  mt-[42%] content-center">
+        <section class=" items-center justify-center  mt-80 content-center">
             <div class="w-full">
                 <p class=" text-6xl font-Poppins m-auto block w-3/12"> Por que nos escolher ? </p>
             </div>

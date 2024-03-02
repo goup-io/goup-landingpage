@@ -3,7 +3,7 @@ import '../index.css';
 
 function Section03(){
     return(
-        <section class="flex items-center justify-center justify-evenly mt-64">
+        <section class="flex items-center justify-center justify-evenly mt-80">
             <div class="w-2/5">
                 <p class="text-7xl">Utilize de todo o poder de nosso <span className='letraDestaqueVerde'>ERP</span></p>
                 <p class="font-extralight mt-10">Chega de ERPs com diversas funcionalidades não usadas.
