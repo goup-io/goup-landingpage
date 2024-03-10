@@ -1,5 +1,4 @@
-import Tablet from '../assets/tablet.png';
-import '../index.css';
+import Tablet from '../../assets/tablet.png';
 
 function Section03(){
     return(

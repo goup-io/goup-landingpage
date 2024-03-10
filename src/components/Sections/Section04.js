@@ -1,5 +1,4 @@
-import SelectText from './functions/SelectText'
-import "../index.css";
+import SelectText from '../functions/SelectText'
 
 function Section04() {
     return (

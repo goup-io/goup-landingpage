@@ -22,6 +22,19 @@ function SelectText(){
     )
 }
 
+var listaSelecoes = [
+    {
+        "opcao" : "Análise de Dados",
+        "descricao" : "Com a nossa ajuda, coletamos transformamos seus dados em informações que mais tarde, podem ser usadas para tomar melhores decisões no seu negócio. Dessa forma, aumentando a eficiência e diminuindo custos",
+    },
+    {
+        "opcao" : "Personalização",
+
+    },{
+        "opcao" : "Transformação Digital",
+    }
+]
+
 function textoMudaCorTamanho(){
     alert("Bomdia")
 }

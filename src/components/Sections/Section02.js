@@ -1,6 +1,5 @@
-import Foguete from '../assets/foguete.png'
-import Fogo from '../assets/fogo.png'
-import '../index.css';
+import Foguete from '../../assets/foguete.png'
+import Fogo from '../../assets/fogo.png'
 
 function Section02(){
     return (
