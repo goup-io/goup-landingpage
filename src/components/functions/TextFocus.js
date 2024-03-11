@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-var contador = 1;
 var transitionDelay = '.3s ease-in-out'
 
 var textFocused = {
@@ -32,15 +31,13 @@ function TextFocus(props){
 
     const [textFocusClass, setTextFocus] = useState(textNormal)
 
-    const [barFocusClass, setBarFocus] = useState(barNormal)
-    
-    const [contador, setContador] = useState(0)
-    
+    const [barFocusClass, setBarFocus] = useState(barNormal)    
 
     useEffect(() => {
-        if (props.idAtivo === props.id) {
+        if (props.idAtivo == props.id) {
             setTextFocus(textFocused)
             setBarFocus(barFocused)
+
         } else {
             setTextFocus(textNormal)
             setBarFocus(barNormal)
