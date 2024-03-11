@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 var contador = 1;
 var transitionDelay = '.3s ease-in-out'
@@ -30,28 +30,33 @@ var barNormal = {
 
 function TextFocus(props){
 
-    var [textFocusClass, setTextFocus] = useState(textNormal)
+    const [textFocusClass, setTextFocus] = useState(textNormal)
 
-    var [barFocusClass, setBarFocus] = useState(barNormal)
+    const [barFocusClass, setBarFocus] = useState(barNormal)
+    
+    const [contador, setContador] = useState(0)
+    
 
-    function clickController(){
-        
-        contador++
-
-        if(contador % 2 == 0){
+    useEffect(() => {
+        if (props.idAtivo === props.id) {
             setTextFocus(textFocused)
             setBarFocus(barFocused)
-            
-        }else{
+        } else {
             setTextFocus(textNormal)
             setBarFocus(barNormal)
         }
+    }, [props.idAtivo])
+
+    function clickController(){
+        
+        props.atualizarIdAtivo(props.id);
+
     }
 
     return(
         <a onClick={clickController} class="flex flex-col items-end gap-4 cursor-pointer">
-        <p style={textFocusClass}>{props.children} •</p>
-        <div style={barFocusClass}></div>
+            <p style={textFocusClass}>{props.children} •</p>
+            <div style={barFocusClass}></div>
         </a>
     )
 }
