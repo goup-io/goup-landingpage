@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import TextFocus from '../functions/TextFocus.js'
 import TextSwitch from '../functions/TextSwitch.js';
+import '../functions/Furacao.css'
+import Furacao from '../../assets/furacao.png'
 
 function Section04() {
 
@@ -12,9 +14,12 @@ function Section04() {
 
     return (
         <section class=" items-center content-center">
+            <img className='furacao' src={Furacao}></img>
+
             <div class="w-full">
                 <p class=" text-7xl font-Poppins m-auto block w-3/12 text-center"> Por que nos escolher ? </p>
             </div>
+
             <div class="w-full items-center mt-[8.5%] flex flex-row gap-20">
                 <div class="w-7/12 background-image: bg-gradient-to-t from-purple-500/45  to-green-400/45  rounded-tr-3xl rounded-br-3xl ">
                     <TextSwitch idAtivo={idAtivo}/>
