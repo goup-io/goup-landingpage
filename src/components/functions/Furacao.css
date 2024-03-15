@@ -3,3 +3,12 @@
     position: absolute;
     width: 66%;
 }
+
+.text-item {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.3;
+}
+
+.text-item.active {
+    opacity: 1;
+}
