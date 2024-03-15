@@ -28,17 +28,25 @@ function Tablet(props){
         if (props.idTabletAtivo == props.id) {
             setTabletStyle(tabletFocused)
 
-        } else {
+        }
+        else if(props.idTabletAtivo == 0){
+            setTabletStyle(tabletFocused)
+        } 
+        else {
             setTabletStyle(tabletNotFocused)
         }
     }, [props.idTabletAtivo])
 
-    function hoverController(){
+    function hoverInController(){
         props.setIdTabletAtivo(props.id)
     }
 
+    function hoverOutController(){
+        props.setIdTabletAtivo(0)
+    }
+
     return (
-        <div style={tabletStyle} onMouseOver={hoverController}>
+        <div style={tabletStyle} onMouseOver={hoverInController} onMouseLeave={hoverOutController}>
             <img class="absolute z-[-1] w-[35rem] h-[50rem]" src={TabletBackground}></img>
             <div class="p-12">
                 <p>{props.children}</p>
