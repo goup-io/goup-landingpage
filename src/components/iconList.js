@@ -14,7 +14,7 @@ function iconList(props){
             </MediaQuery>
             <MediaQuery minWidth={1025}>
                 <img class="w-12" src={props.icone}/>
-                <p>{props.children}</p>
+                <p class="text-3xl">{props.children}</p>
             </MediaQuery>
         </li>
     )

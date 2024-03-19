@@ -32,13 +32,13 @@ function Footer(){
             <MediaQuery minWidth={1025}>
                 <section id="footer" class="flex flex-col justify-center mt-80 ">
                     <p class="text-center text-7xl w-1/3">Quer fazer parte do <span className="letraDestaqueVerde">futuro ?</span></p>
-                    <div class="flex flex-row justify-center m-20 gap-14">
-                        <p class="text-end w-1/4 font-light">Entre em contato conosco sobre seu negócio para que possamos agendar uma visita.</p>
+                    <div class="flex flex-row justify-center m-20 gap-14 w-2/3">
+                        <p class="text-end w-[30rem] font-light">Entre em contato conosco sobre seu negócio para que possamos agendar uma visita.</p>
                         <div class="bg-verdeGoUp w-3 rounded-lg"></div>
                         <ul class="flex flex-col align-center justify-around">
-                            <IconList icone={iconEmail}>goup@gmail.com</IconList>
-                            <IconList icone={iconWhatsApp}>(11)99999-9999</IconList>
-                            <IconList icone={iconTelefone}>(11)3333-3333</IconList>
+                            <IconList icone={iconEmail}>goup.contactus@gmail.com</IconList>
+                            <IconList icone={iconWhatsApp}>(11) 96300-6941</IconList>
+                            <IconList icone={iconTelefone}>(11) 95671-1016</IconList>
                         </ul>
                     </div>
                 </section>
