@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 var transitionDelay = '.3s ease-in-out'
 
 var textFocused = {
-    fontSize: "2.9rem",
+    fontSize: "2.5rem",
     transition: transitionDelay,
 }
 
