@@ -5,16 +5,19 @@ import TabletBackground from '../assets/TabletBackground.png'
 
 var transitionDelay = '.3s ease-in-out'
 
+
+var tabletWidth = "30rem"
+
 var tabletFocused = {
-    width: '35rem',
+    width: tabletWidth,
     height : '60rem',
-    marginTop : "-2rem",
+    marginTop : "-4rem",
     opacity : 1,
     transition: transitionDelay,
 }
 
 var tabletNotFocused = {
-    width: '35rem',
+    width: tabletWidth,
     height : '60rem',
     opacity: 0.5,
     transition: transitionDelay,
@@ -47,8 +50,8 @@ function Tablet(props){
 
     return (
         <div style={tabletStyle} onMouseOver={hoverInController} onMouseLeave={hoverOutController}>
-            <img class="absolute z-[-1] w-[35rem] h-[50rem]" src={TabletBackground}></img>
-            <div class="p-12">
+            <img class="absolute z-[-1] w-[30rem] h-[40rem]" src={TabletBackground}></img>
+            <div class="p-8">
                 <p>{props.children}</p>
             </div>
         </div>

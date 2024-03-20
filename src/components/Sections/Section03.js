@@ -31,23 +31,23 @@ function Section03(){
 
                 <section id="cases" class="flex flex-col w-fill justify-evenly">
 
-                    <p class="text-7xl w-2/4 text-center">Quais as vantagens de usar um <span class="text-verdeGoUp font-bold ">ERP</span> ?</p>
+                    <p class="text-5xl w-2/4 text-center">Quais as vantagens de usar um <span class="text-verdeGoUp font-bold ">ERP</span> ?</p>
 
-                    <div class="w-full justify-evenly flex mt-24">
+                    <div class="w-full justify-evenly  flex mt-24">
                         <TabletJS id="1" setIdTabletAtivo={setIdTabletAtivo} idTabletAtivo={idTabletAtivo}>
-                            <p class="font-semibold text-5xl">Controle adequado para o seu negócio</p>
-                            <p class="font-light mt-12 pl-12 text-4xl text-end">Saiba de tudo o que está acontecendo com o seu negócio.</p>
-                            <img class="mt-8"src={ImagemAux01}></img>
+                            <p class="font-semibold text-4xl">Controle adequado para o seu negócio</p>
+                            <p class="font-light mt-12 pl-12 text-3xl text-end">Saiba de tudo o que está acontecendo com o seu negócio.</p>
+                            <img class="mt-8 w-[25rem]"src={ImagemAux01}></img>
                         </TabletJS>
                         <TabletJS id="2" setIdTabletAtivo={setIdTabletAtivo} idTabletAtivo={idTabletAtivo}>
-                            <p class="font-semibold text-5xl">Automatização de processos</p>
-                            <p class="font-light mt-12 pl-14 text-4xl text-end">Automatiza tarefas repetitivas que consomem seu tempo.</p>
-                            <img class="mt-8"src={ImagemAux02}></img>
+                            <p class="font-semibold text-4xl">Automatização de processos</p>
+                            <p class="font-light mt-12 pl-14 text-3xl text-end">Automatiza tarefas repetitivas que consomem seu tempo.</p>
+                            <img class="mt-8 ml-16 w-[18rem]"src={ImagemAux02}></img>
                         </TabletJS>                        
                         <TabletJS id="3" setIdTabletAtivo={setIdTabletAtivo} idTabletAtivo={idTabletAtivo}>
-                            <p class="font-semibold text-5xl">Informações em tempo real</p>
-                            <p class="font-light mt-12 pl-12 text-4xl text-end">Estamos com você na hora de tomar as decisões importantes.</p>
-                            <img class="mt-8"src={ImagemAux03}></img>
+                            <p class="font-semibold text-4xl">Informações em tempo real</p>
+                            <p class="font-light mt-12 pl-12 text-3xl text-end">Estamos com você na hora de tomar as decisões importantes.</p>
+                            <img class="mt-8 w-[18rem] ml-16"src={ImagemAux03}></img>
                         </TabletJS>
                     </div>
 
