@@ -21,7 +21,7 @@ html{
 section {
   align-items: center;
   justify-content: center;
-  margin-top: 23rem;
+  margin-top: 15rem;
 }
 
 body {
@@ -50,5 +50,7 @@ p{
   
 }
 
-
+.titulo{
+  font-size: 3.75rem;
+}
 
