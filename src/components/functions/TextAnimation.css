@@ -1,0 +1,37 @@
+.containerTextoAnimacao div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: animacaoTexto 20s ease infinite;
+}
+
+.containerTextoAnimacao{
+    overflow-y: hidden;
+    height: 100px;
+}
+
+
+@keyframes animacaoTexto {
+    0% {
+        top: -72px;
+    }
+    
+    25% {
+        top: -230px;
+    }
+
+    50% {
+        top: -397px;
+    }
+    75% {
+        top: -561px;
+    }
+    100% {
+        top: -713px;
+    }
+
+}

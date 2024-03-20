@@ -18,3 +18,38 @@ p{
   color: #48CFAE;
 }
 
+.text-container {
+  position: absolute;
+  animation: subir_texto 14s linear infinite;
+}
+
+@keyframes subir_texto {
+  0% {
+    transform: translateY(0);
+  }
+
+  14% {
+    transform: translateY(-30px);
+  }
+
+  42% {
+    transform: translateY(-130px);
+  }
+
+  56% {
+    transform: translateY(-90px);
+  }
+
+  70% {
+    transform: translateY(-230px);
+  }
+
+  84% {
+    transform: translateY(-190px);
+  }
+
+  100% {
+    transform: translateY(-355px);
+  }
+}
+
