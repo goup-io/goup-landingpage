@@ -50,7 +50,7 @@ function Section01() {
                   className="text-4xl text-center font-extralight mt-8 w-7/12"
                   initial={{ y: 200, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
-                  exit={{ y: 200, opacity: 0 }}
+                  exit={{ x: 1500, opacity: 0 }}
                   transition={{ duration: 1.0, ease: 'easeInOut', delay: 0.2 }}
                   style={{ whiteSpace: 'pre-wrap', textAlign: 'center' }}
                 >
