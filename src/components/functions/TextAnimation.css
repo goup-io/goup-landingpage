@@ -6,32 +6,32 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    animation: animacaoTexto 20s ease infinite;
+    animation: animacaoTexto 10s ease infinite;
 }
 
 .containerTextoAnimacao{
     overflow-y: hidden;
-    height: 100px;
+    height: 7rem;
 }
 
 
 @keyframes animacaoTexto {
     0% {
-        top: -72px;
+        top: -2rem;
     }
     
     25% {
-        top: -230px;
+        top: -12rem;
     }
 
     50% {
-        top: -397px;
+        top: -22rem;
     }
     75% {
-        top: -561px;
+        top: -32rem;
     }
     100% {
-        top: -713px;
+        top: -39.5rem;
     }
 
 }
