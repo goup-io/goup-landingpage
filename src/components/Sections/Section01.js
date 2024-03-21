@@ -1,7 +1,38 @@
 import MediaQuery from 'react-responsive';
 import "../functions/TextAnimation.css"
 
-const Section01 = () => {
+function Section01() {
+  const texts = [
+    'Construimos aplicações que mudam a sociedade',
+    'Valorizamos relacionamentos baseados em confiança, respeito e transparência.',
+    'Agimos com integridade e ética, assumindo a responsabilidade pelo impacto de nossas ações.',
+    'Buscamos constantemente novas maneiras de impulsionar o progresso tecnológico.',
+  ];
+
+  const [currentTextIndex, setCurrentTextIndex] = useState(0);
+  const [showText, setShowText] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowText(false);
+    }, 7000);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [currentTextIndex]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const nextIndex = (currentTextIndex + 1) % texts.length;
+      setCurrentTextIndex(nextIndex);
+      setShowText(true);
+    }, 8500);
+
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [currentTextIndex, texts.length]);
 
   return (
     <>
@@ -10,25 +41,23 @@ const Section01 = () => {
           <p className="titulo">
             Em direção ao <span className="letraDestaqueVerde">Futuro</span>
           </p>
-
-        <div className='containerTextoAnimacao'>
-            <div>
-                <p class="w-7/12 text-4xl mt-20">Construimos aplicações que mudam a sociedade</p>
-            </div>
-            <div>
-                <p class="w-7/12 text-4xl mt-20">Valorizamos relacionamentos baseados em confiança, respeito e transparência.</p>
-            </div>
-            <div>
-                <p class="w-7/12 text-4xl mt-20">Agimos com integridade e ética, assumindo a responsabilidade pelo impacto de nossas ações.</p>
-            </div>
-            <div>
-                <p class="w-7/12 text-4xl mt-20">Buscamos constantemente novas maneiras de impulsionar o progresso tecnológico.</p>
-            </div>
-            <div>
-                <p class="w-7/12 text-4xl mt-20">Construimos aplicações que mudam a sociedade</p>
-            </div>
-
-        </div>
+          <div className="texto-container" style={{ height: '100px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <AnimatePresence wait>
+              {showText && (
+                <motion.p
+                  key={currentTextIndex}
+                  className="text-4xl text-center font-extralight mt-8 w-7/12"
+                  initial={{ y: 200, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ x: 1500, opacity: 0 }}
+                  transition={{ duration: 1.0, ease: 'easeInOut', delay: 0.2 }}
+                  style={{ whiteSpace: 'pre-wrap', textAlign: 'center' }}
+                >
+                  {texts[currentTextIndex]}
+                </motion.p>
+              )}
+            </AnimatePresence>
+          </div>
         </section>
       </MediaQuery>
     </>

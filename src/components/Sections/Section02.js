@@ -27,8 +27,8 @@ function Section02(){
                         <img src={`${Fogo}`} class="mx-20 -mt-14 animate-fogo"></img>
                     </div>
                     <div class="flex flex-col justify-center items-center w-2/6">
-                        <p class="text-5xl">Com a gente seu negócio <span className="letraDestaqueVerde">decola</span></p>
-                        <p class="font-extralight mt-10 text-4xl" >Oferecemos soluções personalizadas para seus problemas</p>
+                        <p class="text-7xl">Com a gente seu negócio <span className="letraDestaqueVerde">decola</span></p>
+                        <p class="font-extralight mt-10">Oferecemos soluções personalizadas para seus problemas</p>
                     </div>
                 </section>
             </MediaQuery>
