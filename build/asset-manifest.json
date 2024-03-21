@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.722c64d4.css",
+    "main.js": "/static/js/main.2f20dff6.js",
+    "static/js/453.40cda724.chunk.js": "/static/js/453.40cda724.chunk.js",
+    "static/media/landingPage.png": "/static/media/landingPage.c03783bfad7848f72f2f.png",
+    "static/media/furacao.png": "/static/media/furacao.dc9b27a99cc7fc0b5ea8.png",
+    "static/media/TabletBackground.png": "/static/media/TabletBackground.a4496b19b7820cf1f390.png",
+    "static/media/foguete.png": "/static/media/foguete.45f8c118a48cae539d07.png",
+    "static/media/Data extraction-amico 2.png": "/static/media/Data extraction-amico 2.05257ce0a40eed10a1b0.png",
+    "static/media/tablet.png": "/static/media/tablet.05cf68d38b44ecace52d.png",
+    "static/media/Starting a business project-amico (1) 2.png": "/static/media/Starting a business project-amico (1) 2.a4ce1a1c985d8d4c4b43.png",
+    "static/media/Ecommerce web page-cuate 1.png": "/static/media/Ecommerce web page-cuate 1.3de8d1b511df049d54e9.png",
+    "static/media/fogo.png": "/static/media/fogo.2c510f094ab1cc5df52a.png",
+    "index.html": "/index.html",
+    "main.722c64d4.css.map": "/static/css/main.722c64d4.css.map",
+    "main.2f20dff6.js.map": "/static/js/main.2f20dff6.js.map",
+    "453.40cda724.chunk.js.map": "/static/js/453.40cda724.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.722c64d4.css",
+    "static/js/main.2f20dff6.js"
+  ]
+}
