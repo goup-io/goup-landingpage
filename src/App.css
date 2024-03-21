@@ -1,40 +1,55 @@
-.App {
-  text-align: center;
+
+a{
+  color: #f1f1f1;
+  font-family: Poppins;
+}
+ 
+p{
+  color: #f1f1f1;
+  font-family: Poppins;
+  font-size:  2.7rem;
+  transition: 1s ease-in-out
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.letraDestaqueVerde{
+  font-family: Poppins;
+  font-weight: bold;
+  color: #48CFAE;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.text-container {
+  position: absolute;
+  animation: subir_texto 14s linear infinite;
+}
+
+@keyframes subir_texto {
+  0% {
+    transform: translateY(0);
+  }
+
+  14% {
+    transform: translateY(-30px);
+  }
+
+  42% {
+    transform: translateY(-130px);
+  }
+
+  56% {
+    transform: translateY(-90px);
+  }
+
+  70% {
+    transform: translateY(-230px);
+  }
+
+  84% {
+    transform: translateY(-190px);
+  }
+
+  100% {
+    transform: translateY(-355px);
   }
 }
 
-.App-header {
-  background-image: url('./assets/landingPage.png');
-  background-size:cover;
-  background-color:#1E1E1E;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
