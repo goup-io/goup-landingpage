@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import MediaQuery from 'react-responsive';
 import "../functions/TextAnimation.css"
 
