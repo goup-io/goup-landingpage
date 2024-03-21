@@ -1,4 +1,4 @@
-.containerTextoAnimacao div{
+.containerTextoAnimacaoMin1555 div{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -6,16 +6,16 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    animation: animacaoTexto 10s ease infinite;
+    animation: animacaoTextoMin1555 10s ease infinite;
 }
 
-.containerTextoAnimacao{
+.containerTextoAnimacaoMin1555{
     overflow-y: hidden;
     height: 7rem;
 }
 
 
-@keyframes animacaoTexto {
+@keyframes animacaoTextoMin1555 {
     0% {
         top: -2rem;
     }
@@ -32,6 +32,43 @@
     }
     100% {
         top: -39.5rem;
+    }
+
+}
+
+.containerTextoAnimacaoMax1554 div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: animacaoTextoMax1554 10s ease infinite;
+}
+
+.containerTextoAnimacaoMax1554{
+    overflow-y: hidden;
+    height: 8rem;
+}
+
+@keyframes animacaoTextoMax1554 {
+    0% {
+        top: -4rem;
+    }
+    
+    25% {
+        top: -14rem;
+    }
+
+    50% {
+        top: -25rem;
+    }
+    75% {
+        top: -37rem;
+    }
+    100% {
+        top: -46.5rem;
     }
 
 }
