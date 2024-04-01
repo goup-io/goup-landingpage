@@ -12,3 +12,6 @@
 .text-item.active {
     opacity: 1;
 }
+.texto-mobile {
+    font-size: 2rem;
+  }
