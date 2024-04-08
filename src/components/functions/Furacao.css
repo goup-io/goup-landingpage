@@ -4,6 +4,13 @@
     width: 66%;
 }
 
+.furacao2 {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    margin-top: 95%;
+}
+
 .text-item {
     transition: opacity 0.3s ease-in-out;
     opacity: 0.3;

@@ -11,8 +11,8 @@ function Section02(){
             <MediaQuery maxWidth={1024}>
                 <section id="sobre" class="flex flex-row">
                     <div class ="w-5/6">
-                         <img src={`${Foguete}`} class=" animate-foguete"></img>
-                        <img src={`${Fogo}`} class=" ml-4 w-12 animate-fogo"></img>
+                         <img src={`${Foguete}`} class="w-56 animate-foguete"></img>
+                        <img src={`${Fogo}`} class=" mx-2 w-12 animate-fogo"></img>
                     </div>
                     <div class = "ml-2">
                         <p class="text-3xl w-3/4" > Com a gente seu negócio <span className="letraDestaqueVerde">decola</span></p>
