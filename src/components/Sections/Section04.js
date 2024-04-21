@@ -14,7 +14,7 @@ import '../functions/Furacao.css';
 import '../functions/overflow.css';
 
 function Section04() {
-  const [idAtivo, setIdAtivo] = useState('0');
+  const [idAtivo, setIdAtivo] = useState('1');
   const [selectedId, setSelectedId] = useState(null);
 
   function atualizarIdAtivo(idText) {
