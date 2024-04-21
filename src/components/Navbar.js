@@ -3,6 +3,7 @@ import homeLogo from '../assets/homeLogo.png'
 import Hover from '../components/functions/Hover';
 import Hamburguer from '../assets/hamburguer.png'
 import { useState } from 'react';
+import './Navbar.css';
 
 //Bibliotecas
 import MediaQuery from 'react-responsive';
@@ -22,14 +23,14 @@ function Navbar() {
             <MediaQuery maxWidth={1024}>
                 <div className="flex items-center justify-between mt-8">
                     <nav className='flex ml-4 '>
-                            <div
-                                className="HAMBURGER-ICON"
-                                onClick={() => setIsNavOpen((prev) => !prev)}
-                            >
-                                <div>
-                                    <img src={Hamburguer} alt="menu" />
-                                </div>
+                        <div
+                            className="HAMBURGER-ICON"
+                            onClick={() => setIsNavOpen((prev) => !prev)}
+                        >
+                            <div>
+                                <img src={Hamburguer} alt="menu" />
                             </div>
+                        </div>
                     </nav>
                     <a className='mr-2' href="/">
                         <img src={homeLogo} alt="logo" />
@@ -39,7 +40,7 @@ function Navbar() {
                             onClick={() => setIsNavOpen(false)}
                         >
                         </div>
-                        <ul className="flex flex-col items-center justify-between min-h-[250px]">
+                        <ul className="flex flex-col items-center justify-between min-h-[250px] showMenuNav hideMenuNav" >
                             <li className="border-b border-gray-400 my-8 uppercase" onClick={() => setIsNavOpen(false)}>
                                 <a href="#navbar">Home</a>
                             </li>
@@ -55,25 +56,7 @@ function Navbar() {
                         </ul>
                     </div>
                 </div>
-                <style>{`
-      .hideMenuNav {
-        display: none;
-      }
-      .showMenuNav {
-        display: block;
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.85);
-        z-index: 10;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-    `}</style>
+
             </MediaQuery>
             <MediaQuery minWidth={1025}>
                 <nav class="mt-10" id="navbar">
