@@ -32,16 +32,13 @@ function TextFocus2(props){
 
     const [textFocusClass, setTextFocus] = useState(textNormal2)
 
-    const [barFocusClass, setBarFocus] = useState(barNormal)    
 
     useEffect(() => {
         if (props.idAtivo == props.id) {
             setTextFocus(textFocused2)
-            setBarFocus(barFocused)
 
         } else {
             setTextFocus(textNormal2)
-            setBarFocus(barNormal)
         }
     }, [props.idAtivo])
 
@@ -52,9 +49,8 @@ function TextFocus2(props){
     }
 
     return(
-        <a onClick={clickController} class="flex justify-center flex-col items-center gap-4 cursor-pointer">
-            <p style={textFocusClass}>{props.children} •</p>
-            <div style={barFocusClass}></div>
+        <a onClick={clickController} class="flex justify-center flex-col  gap-4 cursor-pointer">
+            <p style={textFocusClass}>{props.children} </p>
         </a>
     )
 }

@@ -6,12 +6,16 @@ import TextFocus2 from '../functions/TextFocus2.js';
 import TextSwitch from '../functions/TextSwitch.js';
 import TextSwitch2 from '../functions/TextSwitch2.js';
 import Furacao from '../../assets/furacao.png';
+import setaBranca from '../../assets/setaBranca.png';
+import setaVerde from '../../assets/setaVerde.png';
+
 
 import '../functions/Furacao.css';
 import '../functions/overflow.css';
 
 function Section04() {
   const [idAtivo, setIdAtivo] = useState('0');
+  const [selectedId, setSelectedId] = useState(null);
 
   function atualizarIdAtivo(idText) {
     setIdAtivo(idText);
@@ -35,70 +39,98 @@ function Section04() {
 
   return (
     <>
-<MediaQuery maxWidth={1024}>
-  <section style={{ display: 'flex', flexDirection: 'column' }}>
-    <div className="w-full">
-      <p className="text-2xl font-Poppins m-auto block w-4/12 text-center mb-8">Por que nos escolher?</p>
-    </div>
-    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <ul className="w-full text-right flex flex-col text-2xl text-white"  class="list-none">
-        <li>
-          <TextFocus2
-            id="1"
-            atualizarIdAtivo={atualizarIdAtivo}
-            idAtivo={idAtivo}
-          >
-            Análise de Dados
-          </TextFocus2>
-          <div className={`w-full mt-6 mb-6 text-wrap flex justify-center overflow-container ${idAtivo === '1' ? '' : 'hidden'}`} >
-            <TextSwitch2 idAtivo={idAtivo} />
+      <MediaQuery maxWidth={1024}>
+        <section style={{ display: 'flex', flexDirection: 'column' }}>
+          <div className="w-full">
+            <p className="text-2xl  font-Poppins m-auto block w-6/12 text-center mb-8">Por que nos escolher?</p>
           </div>
-        </li>
+          <ul className="flex flex-col text-2xl text-white pr-4 w-full" >
+            <li className="flex flex-col mt-6 mr-6 ">
+              <div className="flex justify-start ">
+                <div className='w-8 items-center'>
+                  <img src={idAtivo === '1' ? setaVerde : setaBranca} alt="seta" />
+                </div>
+                <div>
+                  <TextFocus2
+                    id="1"
+                    atualizarIdAtivo={atualizarIdAtivo}
+                    idAtivo={idAtivo}
+                  >
+                    <div className='w-full ml-6 '>
+                      Análise de Dados
+                    </div>
+                  </TextFocus2>
+                </div>
+              </div>
+              <div className={`w-full mt-4 mb-6 text-wrap flex overflow-container ${idAtivo === '1' ? '' : 'hidden'}`}>
+                <TextSwitch2 idAtivo={idAtivo} />
+              </div>
+            </li>
 
-        <li>
-          <TextFocus2
-            id="2"
-            atualizarIdAtivo={atualizarIdAtivo}
-            idAtivo={idAtivo}
-          >
-            Personalização
-          </TextFocus2>
-          <div className={`w-full mt-6 mb-6 text-wrap flex justify-center overflow-container ${idAtivo === '2' ? '' : 'hidden'}`}>
-            <TextSwitch2 idAtivo={idAtivo} />
-          </div>
-        </li>
+            <li className="flex flex-col justify-start mt-6 mr-6">
+              <div className="flex justify-start">
+                <div className='w-8 mt-2'>
+                  <img className="start-0" src={idAtivo === '2' ? setaVerde : setaBranca} alt="seta" />
+                </div>
+                <TextFocus2
+                  id="2"
+                  atualizarIdAtivo={atualizarIdAtivo}
+                  idAtivo={idAtivo}
+                >
+                  <div className='w-full ml-6'>
+                    Personalização
+                  </div>
+                </TextFocus2>
+              </div>
+              <div className={`w-full mt-6 mb-6 text-wrap  flex   overflow-container ${idAtivo === '2' ? '' : 'hidden'}`}>
+                <TextSwitch2 idAtivo={idAtivo} />
+              </div>
+            </li>
 
-        <li>
-          <TextFocus2
-            id="3"
-            atualizarIdAtivo={atualizarIdAtivo}
-            idAtivo={idAtivo}
-          >
-            Transformação Digital
-          </TextFocus2>
-          <div className={`w-full mt-6 mb-6 text-wrap flex justify-center overflow-container ${idAtivo === '3' ? '' : 'hidden'}`} >
-            <TextSwitch2 idAtivo={idAtivo} />
-          </div>
-        </li>
+            <li className="flex flex-col justify-start mt-6 mr-6">
+              <div className="flex justify-start">
+                <div className='w-8 mt-2'>
+                  <img className="start-0" src={idAtivo === '3' ? setaVerde : setaBranca} alt="seta" />
+                </div>
+                <TextFocus2
+                  id="3"
+                  atualizarIdAtivo={atualizarIdAtivo}
+                  idAtivo={idAtivo}
+                >
+                  <div className='w-full ml-6'>
+                    Transformação Digital
+                  </div>
+                </TextFocus2>
+              </div>
+              <div className={`w-full mt-6 mb-6 text-wrap  flex   overflow-container ${idAtivo === '3' ? '' : 'hidden'}`} >
+                <TextSwitch2 idAtivo={idAtivo} />
+              </div>
+            </li>
 
-        <li>
-          <TextFocus2
-            id="4"
-            atualizarIdAtivo={atualizarIdAtivo}
-            idAtivo={idAtivo}
-          >
-            Design Inteligente
-          </TextFocus2>
-          <div className='flex flex-row'>
-            <div className={`w-full  text-wrap mt-6 flex justify-center  overflow-container ${idAtivo === '4' ? '' : 'hidden'}`} >
-              <TextSwitch2 idAtivo={idAtivo} />
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-</MediaQuery>
+            <li className="flex flex-col justify-start mt-6 mr-6">
+              <div className="flex justify-start">
+                <div className='w-8 mt-2'>
+                  <img className="start-0" src={idAtivo === '4' ? setaVerde : setaBranca} alt="seta" />
+                </div>
+                <TextFocus2
+                  id="4"
+                  atualizarIdAtivo={atualizarIdAtivo}
+                  idAtivo={idAtivo}
+                >
+                  <div className='w-full ml-6'>
+                    Design Inteligente
+                  </div>
+                </TextFocus2>
+              </div>
+              <div className='flex flex-row '>
+                <div className={`w-full  text-wrap  mt-6 flex   overflow-container ${idAtivo === '4' ? '' : 'hidden'}`} >
+                  <TextSwitch2 idAtivo={idAtivo} />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </MediaQuery>
       <MediaQuery minWidth={1025}>
         <section className="items-center content-center">
           <img className="furacao" src={Furacao} alt="Furacao" />

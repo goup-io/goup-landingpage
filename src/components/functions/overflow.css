@@ -16,7 +16,7 @@
   .overflow-container::after {
     content: "";
     position: absolute;
-    margin-left: 8%;
+    margin-left: 3%;
     top: 0;
     right: auto;
     bottom: 0;

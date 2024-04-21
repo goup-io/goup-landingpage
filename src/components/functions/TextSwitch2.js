@@ -1,7 +1,7 @@
 
 function TextSwitch2(props){
 
-    var textoAnalise = "Com a nossa ajuda, coletamos e transformamos seus dados em informações que mais tarde, podem ser usadas para tomar melhores decisões no seu negócio. Dessa forma, aumentando a eficiência e diminuindo custos."
+    var textoAnalise = "Coletamos e transformamos seus dados em informações que mais tarde, podem ser usadas para tomar melhores decisões no seu negócio. Dessa forma, aumentando a eficiência e diminuindo custos."
 
     var textoPersonalizacao = "Apartir do momento que estabelecemos contato, temos como objetivo analisar e resolver o seu problema de de forma individual. Oferecemos uma solução exclusiva de acordo com suas demandas e necessidades."
 
@@ -23,7 +23,7 @@ function TextSwitch2(props){
     }
 
     return(
-        <p class="w-8/12 font-Poppins text-2xl tracking-wide leading-normal ">
+        <p class="w-full font-Poppins text-2xl tracking-wide leading-normal ml-8 ">
             {textoRetorno}
         </p>
     )
