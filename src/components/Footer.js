@@ -15,7 +15,7 @@ function Footer() {
         <section id='footer' className="flex flex-col justify-center">
           <p className="text-2xl text-center w-3/6">Quer fazer parte do <span className="letraDestaqueVerde">futuro</span> ?</p>
           <div className="flex flex-col items-center gap-8 w-full">
-            <p className="text-center w-3/4 mt-12 text-2xl">Entre em contato conosco sobre seu negócio para que possamos agendar uma visita.</p>
+            <p className="text-center w-10/12 mt-12 font-extralight text-2xl ">Entre em contato conosco sobre seu negócio para que possamos agendar uma visita.</p>
             <div className="bg-verdeGoUp w-2/3 h-2 rounded-lg"></div>
             <ul className="flex flex-col gap-5 items-start">
               <IconList icone={iconEmail}><p className="text-xl">goup@gmail.com</p></IconList>
