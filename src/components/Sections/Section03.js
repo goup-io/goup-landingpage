@@ -11,6 +11,8 @@ import TabletJS from '../Tablet.js'
 import ImagemAux01 from '../../assets/Ecommerce web page-cuate 1.png'
 import ImagemAux02 from '../../assets/Data extraction-amico 2.png'
 import ImagemAux03 from '../../assets/Starting a business project-amico (1) 2.png'
+import Furacao from '../../assets/furacao.png';
+import '../functions/Furacao.css';
 
 
 function Section03(){
@@ -23,9 +25,14 @@ function Section03(){
 
             <MediaQuery maxWidth={1024}>
 
-                <section id="cases" class="flex w-fill justify-evenly">
-
+                <section id="cases" class="flex flex-row w-full  ">
+                <img className="furacao2" src={Furacao} alt="Furacao" />
+                    <div class="flex w-fill justify-center  flex-col ">
+                        <p class="text-3xl w-4/6 text-wrap ml-16" > Utilize de todo o poder de nosso  <span className="letraDestaqueVerde">ERP</span></p>
+                        <p class="font-extralight mt-4 text-2xl max-w-72 ml-16" >Construímos um ERP capaz de atender todas as suas necessidades que consegue ser simples e fácil de usar.</p>
+                    </div>
                 </section>
+
             </MediaQuery>
             <MediaQuery minWidth={1025}>
 

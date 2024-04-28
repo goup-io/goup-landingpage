@@ -1,0 +1,27 @@
+.overflow-container {
+    position: relative;
+    max-height: 600px;
+    overflow-y: scroll;
+    /* Oculta a barra de rolagem padrão */
+    scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none; /* Para Internet Explorer e Edge */
+  }
+  
+  /* Adiciona uma barra de rolagem personalizada */
+  .overflow-container::-webkit-scrollbar {
+    display: none; /* Para navegadores baseados em WebKit (Chrome, Safari, etc.) */
+  }
+  
+  /* Adiciona o efeito visual da barra de rolagem personalizada */
+  .overflow-container::after {
+    content: "";
+    position: absolute;
+    margin-left: 3%;
+    top: 0;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    width: 10px; /* Altere a largura conforme necessário */
+    background: linear-gradient(to bottom, #8C52FF, #48CFAE);
+    border-radius: 3px; /* Metade da largura para criar uma aparência arredondada */
+  }
