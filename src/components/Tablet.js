@@ -50,7 +50,7 @@ function Tablet(props){
 
     return (
         <div style={tabletStyle} onMouseOver={hoverInController} onMouseLeave={hoverOutController}>
-            <img class="absolute z-[-1] w-[30rem] h-[40rem]" src={TabletBackground}></img>
+            <img class="absolute ml-3 z-[-1] w-[20rem] h-[30rem]" src={TabletBackground}></img>
             <div class="p-8">
                 <p>{props.children}</p>
             </div>
