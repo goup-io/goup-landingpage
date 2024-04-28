@@ -40,20 +40,20 @@ function Section03(){
 
                     <p class="text-5xl w-2/4 text-center">Quais as vantagens de usar um <span class="text-verdeGoUp font-bold ">ERP</span> ?</p>
 
-                    <div class="w-11/12 justify-evenly flex mt-24 ml-4">
+                    <div class="w-11/12 justify-around flex mt-24 mr-20 ml-5">
                         <TabletJS id="1" setIdTabletAtivo={setIdTabletAtivo} idTabletAtivo={idTabletAtivo}>
-                            <p class="font-semibold text-2xl w-64">Controle adequado para o seu negócio</p>
-                            <p class="font-light mt-8 text-2xl text-end w-[17.5rem]">Saiba de tudo o que está acontecendo com o seu negócio.</p>
+                            <p class="font-semibold text-2xl w-64 ml-2.5">Controle adequado para o seu negócio</p>
+                            <p class="font-light mt-8 text-2xl text-end w-[17.5rem] ml-2.5">Saiba de tudo o que está acontecendo com o seu negócio.</p>
                             <img class="mt-4 mr-8 w-[18rem]"src={ImagemAux01}></img>
                         </TabletJS>
                         <TabletJS id="2" setIdTabletAtivo={setIdTabletAtivo} idTabletAtivo={idTabletAtivo}>
                             <p class="font-semibold text-2xl w-64 ml-4">Automatização de processos</p>
-                            <p class="font-light mt-6 text-2xl text-end w-[17.5rem]">Automatiza tarefas repetitivas que consomem seu tempo.</p>
+                            <p class="font-light mt-6 text-2xl text-end w-[17.5rem] ml-2.5">Automatiza tarefas repetitivas que consomem seu tempo.</p>
                             <img class="mt-4 ml-10 w-[14rem]"src={ImagemAux02}></img>
                         </TabletJS>                        
                         <TabletJS  id="3" setIdTabletAtivo={setIdTabletAtivo} idTabletAtivo={idTabletAtivo}>
                             <p class="font-semibold text-2xl w-64 ml-4">Informações em tempo real</p>
-                            <p class="font-light mt-8  text-2xl text-end  w-[17.5rem]">Estamos com você na hora de tomar as decisões importantes.</p>
+                            <p class="font-light mt-8  text-2xl text-end  w-[17.5rem] ml-2.5">Estamos com você na hora de tomar as decisões importantes.</p>
                             <img class="w-[13.5rem] mt-4 ml-10"src={ImagemAux03}></img>
                         </TabletJS>
                     </div>
@@ -64,11 +64,11 @@ function Section03(){
                         <p class="font-extralight mt-10">Chega de ERPs com diversas funcionalidades não usadas.
                     Construímos um capaz de atender todas as suas necessidades que consegue ser simples e fácil de usar.</p>
                     </div>
-                    <img src={`${Tablet}`}></img> */}
+                    <img src={${Tablet}}></img> */}
                 </section>
             </MediaQuery>
         </>
     )
 }
 
-export default Section03;
+export default Section03;
